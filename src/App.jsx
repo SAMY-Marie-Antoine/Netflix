@@ -4,7 +4,7 @@ import Categories from "./components/Categories";
 function App() {
   return (
     <div className="container">
-      <Categories />
+      <Categories className="category" />
     </div>
   );
 }

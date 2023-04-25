@@ -1,22 +1,18 @@
 import Affichage from "./Affichage";
 import data from "../assets/data.json";
 
-const Categories = () => {
+const Categories = (className) => {
   return (
     <section>
       {data.map((elem) => {
         // console.log(elem.category, elem.images);
         return (
           <div>
-            <Affichage category={elem.category} />
-
-            {data.map((elem) => {
-              return (
-                <div>
-                  <Affichage images={elem.images} />
-                </div>
-              );
-            })}
+            <Affichage
+              category={elem.category}
+              images={elem.images}
+              className={className}
+            />
           </div>
         );
       })}
