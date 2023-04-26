@@ -1,6 +1,5 @@
 const Images = ({ images }) => {
-  console.log(images);
-  return <article>{images && <p>{<img src={images} />}</p>}</article>;
+  return <div>{images && <p>{<img src={images} />}</p>}</div>;
 };
 
 export default Images;

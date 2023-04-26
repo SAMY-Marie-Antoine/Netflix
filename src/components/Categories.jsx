@@ -7,7 +7,7 @@ const Categories = (className) => {
       {data.map((elem) => {
         // console.log(elem.category, elem.images);
         return (
-          <div>
+          <div key={elem.category}>
             <Affichage
               category={elem.category}
               images={elem.images}

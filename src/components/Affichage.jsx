@@ -4,13 +4,9 @@ const Affichage = ({ className, category, images }) => {
   console.log(category, images);
   return (
     <article className={className}>
+      {category && <h2>{category}</h2>}
       {images.map((elem) => {
-        return (
-          <div>
-            {category && <h2>{category}</h2>}
-            <Images images={elem} />
-          </div>
-        );
+        return <Images images={elem} />;
       })}
     </article>
   );
